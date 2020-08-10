@@ -1,14 +1,23 @@
+/* eslint-disable vue/html-self-closing */
+/* eslint-disable vue/html-self-closing */
 <template>
-  <el-table :data="tableData" style="width: 100%" @selection-change="handleSelectionChange">
-    <el-table-column
-      v-for="(item,i) in tableColumu"
-      :key="i"
-      :label="item.label"
-      :prop="item.field"
-      :min-width="item.width"
-      show-overflow-tooltip
+  <div>
+    <el-table :data="tableData" style="width: 100%" @selection-change="handleSelectionChange">
+      <el-table-column
+        v-for="(item,i) in tableColumu"
+        :key="i"
+        :label="item.label"
+        :prop="item.field"
+        :min-width="item.width"
+        show-overflow-tooltip
+      />
+    </el-table>
+    <el-pagination
+      background
+      layout="prev, pager, next"
+      :total="1000"
     />
-  </el-table>
+  </div>
 </template>
 
 <script>

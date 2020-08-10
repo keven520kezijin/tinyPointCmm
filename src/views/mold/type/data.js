@@ -7,7 +7,7 @@ export const table_columu = [
 ]
 
 export const tableData = Mock.mock({
-  'list|100-2000': [{
+  'list|20': [{
     'id|+1': 1,
     title: '@title(5, 10)',
     name: '@cname',
